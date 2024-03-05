@@ -1,0 +1,8 @@
+- Add "Create Row" option which ads new row, with login permission before adding any new rows (done)
+- Add pagination when reached certain number of rows (done)
+- Be able to access any excel table and to add in every table new row with the "Create Row" option 
+- Be able to search values in the input html element
+- Be able to use the "delete" option for certain selected row, with login permission
+- Be able to use the "edit" option for certain selected row, with login permission
+- Add database that stores data from created new rows from the "Create Row" option (Will decide in the future wheather to do
+that)

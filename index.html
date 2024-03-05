@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeleynik herbs software</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="full-container">
+    <div class="table-container">
+      <div class="nav-container">
+        <div class="span-container">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="tableValues-container">
+        <div class="operationsContainer">
+          <input type="text" id="search" placeholder="Search Values">
+          <button id="addTable"><span>Create row</span></button>
+        </div>
+        <nav class="tables-nav">
+          <ul>
+            <li><a href="#" class="active">Main List table</a></li>
+            <li><a href="#">Product List table</a></li>
+            <li><a href="#">Apple, raw table</a></li>
+            <li><a href="#">Apricot, raw table</a></li>
+            <li><a href="#">Apricot, dry table</a></li>
+            <li><a href="#">Avocado, dry table</a></li>
+            <li><a href="#">Blackccurrants, raw table</a></li>
+            <li><a href="#">Breadfruit, raw table</a></li>
+            <li><a href="#">Clementines, raw table</a></li>
+            <li><a href="#">Coconut, raw table</a></li>
+            <li><a href="#">Dates table</a></li>
+            <li><a href="#">Grapefruit, raw table</a></li>
+            <li><a href="#">Pears, raw table</a></li>
+          </ul>
+        </nav>
+        <table>
+          <tr>
+            <th>Болка / Болест</th>
+            <th>Apple, raw</th>
+            <th>Functions</th>
+          </tr>
+          <tr>
+            <td>Абсцес</td>
+            <td>Черновръх (Котешка стъпка)</td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Агалактия (липса на кърма)</td>
+            <td>Пришница ???</td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Аденоми</td>
+            <td>Черновръх (Котешка стъпка)</td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Азбестоза (Белодробна хипертония от вдишване на азбест) </td>
+            <td></td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Акне (пъпки) и Мазна кожа</td>
+            <td>Босилек + Божур + Трендафил се мие лицето / Чубрица</td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Алергии</td>
+            <td>Дълголистна мента / Блатна мента ??? / Байкалски шлемник (превара)</td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Алергичен ринит</td>
+            <td></td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Анафилаксия</td>
+            <td>Черно кандилниче / Ранилист (Чистец) / Лавандула / Кошутина / Маточина / Водна мента / Полска мента / Дълголистна мента / Блатна мента / Коча билка / Риган / Босилек / Пришница / Градински чай / Мускатна какула / Чубрица / Байкалски шлемник (превара)</td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Ангина (гнойна)</td>
+            <td>Босилек / Градински чай</td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Ангиоедем (преходен оток без ясни граници)</td>
+            <td>Лавандула / Дяволска уста / Маточина / Дълголистна мента / Риган / Босилек</td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Антиопатия (кръвоносно съдово страдание)</td>
+            <td>Дяволска уста</td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Анкилозиращ спондилит</td>
+            <td></td>
+            <td class="third-td-row"> <div class="button-container"><button>Delete</button> <button>Edit</button>
+              </div>
+            </td>
+          </tr>
+          </table>
+          <div id="pagination"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal -->
+    <div id="createRowModal" class="modal"> 
+      <!-- Modal content for creating new row -->
+      <div class="modal-content">
+        <div class="inputInfo-container">
+          <label id="usernameLabel">Username:</label>
+          <input type="text" id="username">
+          <label id="passwordLabel">Password:</label>
+          <input type="password" id="password">
+          <button id="create-row-button">Create row</button>
+        </div>
+        <span class="close-createRowModal">&times;</span>
+      </div>
+    </div>
+
+  <div id="deleteRowModal">
+    <div class="modal-content-delete">
+      <div class="inputInfo-container-delete">
+        <label id="usernameLabel-delete">Username:</label>
+        <input type="text" id="username-delete">
+        <label id="passwordLabel-delete">Password:</label>
+        <input type="password" id="password-delete">
+        <button id="delete-row-button">Delete row</button>
+      </div>
+      <span class="close-deleteModal">&times;</span>
+    </div>
+  </div>
+
+<div id="editRowModal">
+  <div class="modal-content-edit">
+    <div class="inputInfo-container-edit">
+      <label id="usernameLabel-edit">Username:</label>
+      <input type="text" id="username-edit">
+      <label id="passwordLabel-edit">Password:</label>
+      <input type="password" id="password-edit">
+      <button id="edit-row-button">Edit row</button>
+    </div>
+    <span class="close-editModal">&times;</span>
+  </div>
+</div>
+      
+      <!-- Pagination and Create New Row code -->
+      <script src="app.js"></script>
+      <script src="app-2.js"></script>
+    </body>
+    
+    </html>

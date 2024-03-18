@@ -1,0 +1,19 @@
+.table-container {
+    overflow-y: hidden; /* Enables vertical scrolling */
+    overflow-x: auto; /* Hides horizontal scrolling */
+    width: 100%; /* Ensures the container spans the full width of its parent */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+}
+
+table {
+    width: auto; /* Allows the table to expand as needed based on its content */
+    min-width: 100%; /* Ensures the table is at least as wide as its container */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    white-space: nowrap; /* Keeps the header and cell content on a single line */
+}

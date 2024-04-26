@@ -22,6 +22,23 @@ let pagination = document.getElementById('pagination');
 let currentPage = 1;
 const rowsPerPage = 8;
 
+// tables nav functuonality
+
+    const navLinks = document.querySelectorAll('.tables-nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // Prevent default link behavior if you want to stay on the page
+            // event.preventDefault();
+
+            // Remove the 'active' class from all links
+            navLinks.forEach(l => l.classList.remove('active'));
+
+            // Add 'active' class to the clicked link
+            this.classList.add('active');
+        });
+    });
+
+
 // Start of Search values logic
 
 document.getElementById('search').addEventListener('input', function(e) {

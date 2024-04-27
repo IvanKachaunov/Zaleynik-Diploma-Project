@@ -15,10 +15,94 @@ let editingBilki = "";
 let removedElement = "";
 let editingBolka = "";
 let tableTD = "";
+
 let createEditedLabelBolka = "";
 let createEditedInputBolka = "";
+
 let createEditedLabelBilki = "";
 let createEditedInputBilki = "";
+
+let createEditedLabelApricotRawElement = "";
+let createEditedInputApricotRawElement = "";
+
+let createEditedLabelApricotDryElement = "";
+let createEditedInputApricotDryElement = "";
+
+let createEditedLabelAvocadoRawElement = "";
+let createEditedInputAvocadoRawElement = "";
+
+let createEditedLabelBananaElement = "";
+let createEditedInputBananaElement = "";
+
+let createEditedLabelBlackberryElement = "";
+let createEditedInputBlackberryElement = "";
+
+let createEditedLabelBlackcurrantRawElement = "";
+let createEditedInputBlackcurrantRawElement = "";
+
+let createEditedLabelBlueberryElement = "";
+let createEditedInputBlueberryElement = "";
+
+let createEditedLabelBreadfruitRawElement = "";
+let createEditedInputBreadfruitRawElement = "";
+
+let createEditedLabelCherryElement = "";
+let createEditedInputCherryElement = "";
+
+let createEditedLabelClementinesRawElement = "";
+let createEditedInputClementinesRawElement = "";
+
+let createEditedLabelCoconutRawElement = "";
+let createEditedInputCoconutRawElement = "";
+
+let createEditedLabelDatesElement = "";
+let createEditedInputDatesElement = "";
+
+let createEditedLabelGrapefruitRawElement = "";
+let createEditedInputGrapefruitRawElement = "";
+
+let createEditedLabelLemonElement = "";
+let createEditedInputLemonElement = "";
+
+let createEditedLabelLimeElement = "";
+let createEditedInputLimeElement = "";
+
+let createEditedLabelMelonElement = "";
+let createEditedInputMelonElement = "";
+
+let createEditedLabelOrangeElement = "";
+let createEditedInputOrangeElement = "";
+
+let createEditedLabelPeachElement = "";
+let createEditedInputPeachElement = "";
+
+let createEditedLabelPearsRawElement = "";
+let createEditedInputPearsRawElement = "";
+
+let createEditedLabelPineappleElement = "";
+let createEditedInputPineappleElement = "";
+
+let createEditedLabelPlumElement = "";
+let createEditedInputPlumElement = "";
+
+let createEditedLabelPumpkinElement = "";
+let createEditedInputPumpkinElement = "";
+
+let createEditedLabelQuinceElement = "";
+let createEditedInputQuinceElement = "";
+
+let createEditedLabelRaisinsElement = "";
+let createEditedInputRaisinsElement = "";
+
+let createEditedLabelRaspberryElement = "";
+let createEditedInputRaspberryElement = "";
+
+let createEditedLabelStrawberryElement = "";
+let createEditedInputStrawberryElement = "";
+
+let createEditedLabelWatermelonElement = "";
+let createEditedInputWatermelonElement  = "";
+
 let createEditedButton = "";
 
 deleteRowButton.addEventListener("click", () => {
@@ -27,6 +111,7 @@ deleteRowButton.addEventListener("click", () => {
         usernameModalDelete.value = "";
         passwordModalDelete.value = "";
         deleteRowModal.style.display = "none";
+        console.log(deleteRowButton);
     } else {
         removedElement.remove();
 
@@ -58,13 +143,56 @@ editRowButton.addEventListener("click", () => {
         createEditedInputBolka = document.createElement("input");
         createEditedLabelBilki = document.createElement("label");
         createEditedInputBilki = document.createElement("input");
+        createEditedLabelApricotRawElement = document.createElement("label");
+        createEditedInputApricotRawElement = document.createElement("input");
+        createEditedLabelApricotDryElement = document.createElement("label");
+        createEditedInputApricotDryElement = document.createElement("input");
         createEditedButton = document.createElement("button");
 
-        createEditedLabelBolka.textContent = " Болка / Болест: ";
-        createEditedLabelBilki.textContent = " Билки ";
+        createEditedLabelBolka.textContent = " Болка: ";
+        createEditedLabelBilki.textContent = " Apple, Raw ";
+        createEditedLabelApricotRawElement.textContent = " Apricot, Raw ";
+        createEditedLabelAvocadoRawElement.textContent = " Avocado Raw ";
+        createEditedLabelBananaElement.textContent = " Banana ";
+        createEditedLabelBlackberryElement.textContent = " Blackberry ";
+        createEditedLabelBlueberryElement.textContent = " Blueberry ";
+        createEditedLabelBlackcurrantRawElement.textContent = " Blackcurrant Raw ";
+        createEditedLabelBreadfruitRawElement.textContent = " Breadfruit Raw ";
+        createEditedLabelCherryElement.textContent = " Cherry ";
+        createEditedLabelClementinesRawElement.textContent = " Clementines Raw ";
+        createEditedLabelCoconutRawElement.textContent = " Coconut Raw ";
+        createEditedLabelDatesElement.textContent = " Dates ";
+        createEditedLabelGrapefruitRawElement.textContent = " Grapefruit Raw ";
+        createEditedLabelLemonElement.textContent = " Lemon ";
         createEditedButton.textContent = "Edit Current Row";
         modalContentEditContainer.append(createEditedLabelBolka, createEditedInputBolka);
         modalContentEditContainer.append(createEditedLabelBilki, createEditedInputBilki);
+        modalContentEditContainer.append(createEditedLabelApricotRawElement, createEditedInputApricotRawElement);
+        modalContentEditContainer.append(createEditedLabelApricotDryElement, createEditedInputApricotDryElement);
+        modalContentEditContainer.append(createEditedLabelAvocadoRawElement, createEditedInputAvocadoRawElement);
+        modalContentEditContainer.append(createEditedLabelBananaElement, createEditedInputBananaElement);
+        modalContentEditContainer.append(createEditedLabelBlackberryElement, createEditedInputBlackberryElement);
+        modalContentEditContainer.append(createEditedLabelBlackcurrantRawElement, createEditedInputBlackcurrantRawElement);
+        modalContentEditContainer.append(createEditedLabelBlueberryElement, createEditedInputBlueberryElement);
+        modalContentEditContainer.append(createEditedLabelBreadfruitRawElement, createEditedInputBreadfruitRawElement);
+        modalContentEditContainer.append(createEditedLabelCherryElement, createEditedInputCherryElement);
+        modalContentEditContainer.append(createEditedLabelClementinesRawElement, createEditedInputClementinesRawElement);
+        modalContentEditContainer.append(createEditedLabelCoconutRawElement, createEditedInputCoconutRawElement);
+        modalContentEditContainer.append(createEditedLabelDatesElement, createEditedInputDatesElement);
+        modalContentEditContainer.append(createEditedLabelGrapefruitRawElement, createEditedInputGrapefruitRawElement);
+        modalContentEditContainer.append(createEditedLabelLemonElement, createEditedInputLemonElement);
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
+        modalContentEditContainer.append();
         modalContentEditContainer.append(createEditedButton);
         closeEditModal.style.display = "flex";
 
@@ -74,10 +202,52 @@ editRowButton.addEventListener("click", () => {
             } else{
                 tableTD[0].innerHTML = createEditedInputBolka.value;
                 tableTD[1].innerHTML = createEditedInputBilki.value;
+                tableTD[2].innerHTML = createEditedInputApricotRawElement.value;
+                tableTD[3].innerHTML = createEditedInputApricotDryElement.value;
+                tableTD[4].innerHTML = createEditedInputAvocadoRawElement.value;
+                tableTD[5].innerHTML = createEditedInputBananaElement.value;
+                tableTD[6].innerHTML = createEditedInputBlackberryElement.value;
+                tableTD[7].innerHTML = createEditedInputBlackcurrantRawElement.value;
+                tableTD[8].innerHTML = createEditedInputBlueberryElement.value;
+                tableTD[9].innerHTML = createEditedInputBreadfruitRawElement.value;
+                tableTD[10].innerHTML = createEditedInputCherryElement.value;
+                tableTD[11].innerHTML = createEditedInputClementinesRawElement.value;
+                tableTD[12].innerHTML = createEditedInputCoconutRawElement.value;
+                tableTD[13].innerHTML = createEditedInputDatesElement.value;
+                tableTD[14].innerHTML = createEditedInputGrapefruitRawElement.value;
+                tableTD[15].innerHTML = createEditedInputLemonElement.value;
                 createEditedLabelBolka.remove();
                 createEditedInputBolka.remove();
                 createEditedLabelBilki.remove();
                 createEditedInputBilki.remove();
+                createEditedLabelApricotRawElement.remove();
+                createEditedInputApricotRawElement.remove();
+                createEditedLabelApricotDryElement.remove();
+                createEditedInputApricotDryElement.remove();
+                createEditedLabelAvocadoRawElement.remove();
+                createEditedInputAvocadoRawElement.remove();
+                createEditedLabelBananaElement.remove();
+                createEditedInputBananaElement.remove();
+                createEditedLabelBlackberryElement.remove();
+                createEditedInputBlackberryElement.remove();
+                createEditedLabelBlackcurrantRawElement.remove();
+                createEditedInputBlackcurrantRawElement.remove();
+                createEditedLabelBlueberryElement.remove();
+                createEditedInputBlueberryElement.remove();
+                createEditedLabelBreadfruitRawElement.remove();
+                createEditedInputBreadfruitRawElement.remove();
+                createEditedLabelCherryElement.remove();
+                createEditedInputCherryElement.remove();
+                createEditedLabelClementinesRawElement.remove();
+                createEditedInputClementinesRawElement.remove();
+                createEditedLabelCoconutRawElement.remove();
+                createEditedInputCoconutRawElement.remove();
+                createEditedLabelDatesElement.remove();
+                createEditedInputDatesElement.remove();
+                createEditedLabelGrapefruitRawElement.remove();
+                createEditedInputGrapefruitRawElement.remove();
+                createEditedLabelLemonElement.remove();
+                createEditedInputLemonElement.remove();
                 createEditedButton.remove();
                 usernameLabelEdit.style.display = "inline";
                 usernameModalEdit.style.display = "inline";
@@ -146,5 +316,33 @@ function resetModalEdit() {
     createEditedInputBolka.remove();
     createEditedLabelBilki.remove();
     createEditedInputBilki.remove();
+    createEditedLabelApricotRawElement.remove();
+    createEditedInputApricotRawElement.remove();
+    createEditedLabelApricotDryElement.remove();
+    createEditedInputApricotDryElement.remove();
+    createEditedLabelAvocadoRawElement.remove();
+    createEditedInputAvocadoRawElement.remove();
+    createEditedLabelBananaElement.remove();
+    createEditedInputBananaElement.remove();
+    createEditedLabelBlackberryElement.remove();
+    createEditedInputBlackberryElement.remove();
+    createEditedLabelBlackcurrantRawElement.remove();
+    createEditedInputBlackcurrantRawElement.remove();
+    createEditedLabelBlueberryElement.remove();
+    createEditedInputBlueberryElement.remove();
+    createEditedLabelBreadfruitRawElement.remove();
+    createEditedInputBreadfruitRawElement.remove();
+    createEditedLabelCherryElement.remove();
+    createEditedInputCherryElement.remove();
+    createEditedLabelClementinesRawElement.remove();
+    createEditedInputClementinesRawElement.remove();
+    createEditedLabelCoconutRawElement.remove();
+    createEditedInputCoconutRawElement.remove();
+    createEditedLabelDatesElement.remove();
+    createEditedInputDatesElement.remove();
+    createEditedLabelGrapefruitRawElement.remove();
+    createEditedInputGrapefruitRawElement.remove();
+    createEditedLabelLemonElement.remove();
+    createEditedInputLemonElement.remove();
     createEditedButton.remove();
 }

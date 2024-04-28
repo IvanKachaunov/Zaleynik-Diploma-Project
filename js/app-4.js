@@ -199,7 +199,7 @@ editRowButton.addEventListener("click", () => {
         createEditedInputWatermelonElement = document.createElement("input");
         createEditedButton = document.createElement("button");
  
-        createEditedLabelBolka.textContent = " Болка: ";
+        createEditedLabelBolka.textContent = " Fruits & Vegetables: ";
         createEditedLabelBilki.textContent = " Apple, Raw ";
         createEditedLabelApricotRawElement.textContent = " Apricot, Raw ";
         createEditedLabelApricotDryElement.textContent = " Apricot, Dry ";

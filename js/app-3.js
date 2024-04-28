@@ -255,7 +255,7 @@ createRowButtonModal.addEventListener("click", () => {
  
     // Create form fields for adding a row
     createLabelPainElement = document.createElement("label");
-    createLabelPainElement.textContent = " Болка: ";
+    createLabelPainElement.textContent = " Fruits & Vegetables: ";
     createInputPainElement = document.createElement("input");
     createInputPainElement.setAttribute("id", "pain_description");
     modalInfoContainer.appendChild(createLabelPainElement);
